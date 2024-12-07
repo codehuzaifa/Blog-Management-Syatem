@@ -1,0 +1,17 @@
+{
+    "name": "faisa/mvcblog",
+    "description": "BLOG POST",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Huzaifa Ali",
+            "email": "Huzaif.ali@er4u.in"
+        }
+    ],
+    "require": {},
+    "version": "1.0.0"
+}
