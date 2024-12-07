@@ -59,6 +59,8 @@ $router->post('/Admin/CategorySystem', CategoryController::class, 'CategorySyste
 
 $router->get('/search', AdminController::class, 'searchPosts');
 
+$router->get('/api/posts', AdminController::class, 'getAllPosts');
+
 
 
 

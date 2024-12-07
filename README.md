@@ -111,3 +111,8 @@ Steps
 2) composer dump-autoload
 3) Database name :- blogpost
 4) Create A database sql file locate in SQL Folder.
+
+
+All Post Api Url
+
+http://localhost/Blog-Management-Syatem/api/posts

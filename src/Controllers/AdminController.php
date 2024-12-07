@@ -312,5 +312,9 @@ class AdminController extends Controller {
             echo json_encode($posts);
         }
     }
+    public function getAllPosts(){
+        $data = $this->blogModel->getAllPosts();
+        echo json_encode($data);
+    }
    
 }
