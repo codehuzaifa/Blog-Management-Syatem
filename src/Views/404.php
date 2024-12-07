@@ -23,7 +23,7 @@
 		<p> 
 			<?=$data['message']?>
 		</p>
-        <a href="<?= $_SERVER['REQUEST_URI'] !== '/MVCBLOG/public/' ? '/MVCBLOG/public/' : '/' ?>" class="btn btn-primary">Go Back to Home</a>
+        <a href="<?= $_SERVER['REQUEST_URI'] !== '/Blog-Management-Syatem/public/' ? '/Blog-Management-Syatem/public/' : '/' ?>" class="btn btn-primary">Go Back to Home</a>
 
         </div>
     </div>

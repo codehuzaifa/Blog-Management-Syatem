@@ -12,7 +12,7 @@
         <h1><?= htmlspecialchars($post['title']) ?></h1>
         <p><strong>Published on:</strong> <?= date('F j, Y, g:i a', strtotime($post['publish_date'])) ?></p>
         <p><strong>Author:</strong> <?= htmlspecialchars($post['authername']) ?></p>
-        <img style="width: 100% !important;height: 250px !important;" src="<?=ROOT_URL?>/uploads/<?= htmlspecialchars($post['image']) ?>" class="img-fluid" alt="<?= htmlspecialchars($post['title']) ?>">
+        <img style="width: 100% !important;height: 250px !important;" src="<?=ROOT_URL?>/public/uploads/<?= htmlspecialchars($post['image']) ?>" class="img-fluid" alt="<?= htmlspecialchars($post['title']) ?>">
         <p class="mt-3"><?= nl2br(htmlspecialchars($post['description'])) ?></p>
 
         <a href="BlogList" class="btn btn-primary">Back to All Posts</a>

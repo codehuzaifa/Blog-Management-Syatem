@@ -29,7 +29,7 @@ class CategoryController extends Controller {
             $name = $_POST['name'];
             $this->categoryModel->addCategory($name);
             $this->regenerateCsrfToken();
-            header('Location: /MVCBLOG/Admin/CategorySystem');
+            header('Location: /Blog-Management-Syatem/Admin/CategorySystem');
         }
         
     }

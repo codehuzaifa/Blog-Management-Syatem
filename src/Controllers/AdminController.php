@@ -87,7 +87,7 @@ class AdminController extends Controller {
     }
     public function Logout() {
         session_destroy();
-        header('Location: /MVCBLOG/Admin/Login'); // Call the render method to load the 'index' view
+        header('Location: /Blog-Management-Syatem/Admin/Login'); // Call the render method to load the 'index' view
     }
     public function AddBlog() {
         $data = $this->categoryModel->getAllCategories();
@@ -114,14 +114,14 @@ class AdminController extends Controller {
                     'type' => 'success',
                     'message' => "Blog Added Successfully."
                 ];
-                header('Location: /MVCBLOG/Admin/AddBlog');
+                header('Location: /Blog-Management-Syatem/Admin/AddBlog');
                 exit;
             } else {
                 $_SESSION['flash_message'] = [
                     'type' => 'danger',
                     'message' => "Failed to upload image."
                 ];
-                header('Location: /MVCBLOG/Admin/AddBlog');
+                header('Location: /Blog-Management-Syatem/Admin/AddBlog');
                 exit;
             }
         }
@@ -283,7 +283,7 @@ class AdminController extends Controller {
     public function deactivate() {
         $id = $_REQUEST['id'];
         $this->userModel->deactivateUser($id);
-        header('Location: /MVCBLOG/Admin/UserList');
+        header('Location: /Blog-Management-Syatem/Admin/UserList');
         exit;
     }
 
